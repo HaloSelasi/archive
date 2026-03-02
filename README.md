@@ -1,23 +1,37 @@
 # About archive
 
-Terminal executable to create and write csv files.
+A lightweight terminal executable for creating and writing CSV files.
 
-Desktop\CL.csv as Database. 
+Designed for quick entry into a 1-4 column table.
 
-Manually close(make sure to save before).
+# Overview
 
----
+Create a custom csv file.
+
+Enter multiple rows of data.
+
+Save all entries to csv file on demand.
+
+Simple and write-only. Open in Excel, LibreOffice, or similar for formatting.
 
 # Commands
 
-Enter [1] for new entry.
+- Enter [1] for new entry.
 
-Fill in Variables; Press spacekey to leave column empty.
+- Fill in columns.
 
-Enter [2] to save to 'CL.csv'.
+- Press Enter to skip a column.
+
+- Enter [2] to save to CSV file.
+
+- Enter [0] to exit.
 
 ---
 
-**Note:**
-Currently write only.
+# Notes:
+
+Currently write only!
+Save before terminating executable (saving while CSV file is open will result in write errors).
+
+
 
