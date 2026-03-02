@@ -16,13 +16,13 @@ void load();void entry();void save();
 
 string path=getenv("USERPROFILE"); 
 string directory=path + "\\Desktop\\CL.csv";
-fstream Database(directory);//create and read Database
+fstream Database;//create and read Database
 
 int main(){   
     cout<<path;
     cout<<"\n\n!Tribune!\n\n";//Sounds nice. "trYYYBeeeeUUUUUUNNNe"
+    fstream Database(directory);//create and read Database
     while(true){
-        fstream Database(directory);//create and read Database
         //select choice
         int choice;
         cout<<left<<setw(10)<<"[1] New Entry"<<setw(10)<<"[2] Save"<<endl;
@@ -41,7 +41,7 @@ int main(){
                 default:
                     cout<<"Wrong choice!";
                     break;
-            }//issue with switch where non integer causes breakdown. 
+            }//issue with switch where non integer causes breakdown.
         }else{cin.clear();cin.ignore();}
         
         //cin.ignore();
@@ -61,10 +61,11 @@ int main(){
 }*/
 void entry(){
     Lists entry;//creating object
-    cout<<"l1: ";cin >> entry.l1;
-    cout<<"l2: ";cin >> entry.l2;
-    cout<<"l3: ";cin >> entry.l3;
-    cout<<"l4: ";cin >> entry.l4;
+    cin.ignore();
+    cout<<"l1: ";getline(cin, entry.l1);
+    cout<<"l2: ";getline(cin, entry.l2);
+    cout<<"l3: ";getline(cin, entry.l3);
+    cout<<"l4: ";getline(cin, entry.l4);
     TableData.push_back(entry);
     int ID=TableData.size()-1;
     cout<<entry.l1<<"\t\t"<<entry.l2<<"\t\t"<<entry.l3<<"\t\t"<<entry.l4<<endl;
