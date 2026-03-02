@@ -1,12 +1,12 @@
 # About archive
 
-A lightweight terminal executable for creating and writing CSV files.
+A lightweight terminal executable for creating and writing csv files.
 
 Designed for quick entry into a 1-4 column table.
 
 # Overview
 
-Create a custom csv file.
+Create custom csv files.
 
 Enter multiple rows of data.
 
@@ -22,7 +22,7 @@ Simple and write-only. Open in Excel, LibreOffice, or similar for formatting.
 
 - Press Enter to skip a column.
 
-- Enter [2] to save to CSV file.
+- Enter [2] to save to csv.
 
 - Enter [0] to exit.
 
