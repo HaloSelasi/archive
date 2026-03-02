@@ -31,7 +31,7 @@ int main(){
     while(true){
         //select choice
         int choice;
-        cout<<left<<setw(10)<<"[1] New Entry"<<setw(10)<<"[2] Save"<<endl;
+        cout<<left<<setw(10)<<"[1] New Entry"<<setw(10)<<"[2] Save"<<setw(10)<<"[0] Exit"<<endl;
         cout<<"Choice[Save before you close]: ";
         cin>>choice;
         if(!cin.fail()){
@@ -44,6 +44,8 @@ int main(){
                 case 2:
                     save();
                     break;
+                case 0:
+                    exit(0);
                 default:
                     cout<<"Wrong choice!";
                     break;
@@ -76,7 +78,7 @@ void entry(){
     TableData.push_back(entry);
     int ID=TableData.size()-1;
     cout<<entry.l1<<"\t\t"<<entry.l2<<"\t\t"<<entry.l3<<"\t\t"<<entry.l4<<endl;
-    cout<<"ID: "<<ID<<endl;
+    cout<<"ID: "<<ID<<endl<<endl;
 }
 void save(){
     ofstream Database(directory);
