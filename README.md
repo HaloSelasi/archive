@@ -1,6 +1,6 @@
 # About archive
 
-Terminal executable to create csv files with 4 rows.
+Terminal executable to create and write csv files.
 
 Desktop\CL.csv as Database. 
 
@@ -12,7 +12,7 @@ Manually close(make sure to save before).
 
 Enter [1] for new entry.
 
-Fill in Variables.
+Fill in Variables; Press spacekey to leave column empty.
 
 Enter [2] to save to 'CL.csv'.
 
